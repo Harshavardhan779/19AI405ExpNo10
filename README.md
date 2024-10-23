@@ -52,7 +52,7 @@ print(plan)
 
 # Program:
 
-```
+```python
 def is_goal_state(current_state, goal_state):
     return current_state == goal_state
 
@@ -86,7 +86,7 @@ def find_plan(initial_state, goal_state, actions):
 def is_applicable(current_state, precondition):
     return all(current_state.get(key) == value for key, value in precondition.items())
 # Example usage
-'''
+
 initial_state = {'A': 'Table', 'B': 'Table'}
 goal_state = {'A': 'B', 'B': 'Table'}
 
@@ -97,7 +97,7 @@ actions = {
 
 plan = find_plan(initial_state, goal_state, actions)
 print(plan)
-'''
+
 initial_state = {'A': 'Table', 'B': 'Table', 'C': 'Table'}
 goal_state = {'A': 'B', 'B': 'C', 'C': 'Table'}
 
@@ -109,7 +109,7 @@ actions = {
 
 plan = find_plan(initial_state, goal_state, actions)
 print(plan)
-'''
+
 initial_state = {'A': 'Table', 'B': 'Table'}
 goal_state = {'A': 'Table', 'B': 'Table'}
 
@@ -119,7 +119,7 @@ actions = {
 
 plan = find_plan(initial_state, goal_state, actions)
 print(plan)
-'''
+
 
 ```
 # Output:
